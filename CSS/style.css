@@ -249,15 +249,27 @@ nav .container-fluid {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 35rem;
+  min-height: 30rem;
   width: auto;
 }
 
 .banner-section .card {
-  background-color: rgba(0, 0, 0, 0.7) !important;
-  color: #ffffff !important;
-  opacity: 1 !important;
-  z-index: 999;
+  background-color: transparent !important;
+  color: #ECECEC;
+  z-index: 3;
+  border: none;
+}
+
+.banner-section::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  z-index: 0;
+  opacity: 0.5;
 }
 
 /* ========Media Queries======= */
@@ -283,17 +295,13 @@ nav .container-fluid {
 
     .banner .image {
       width: 100%;
-      /* Görselin genişliği %100 */
       height: auto;
-      /* Yüksekliği otomatik ayarla */
     }
   }
 
   .banner .image {
     width: 100%;
-    /* Görselin genişliği #app ile uyumlu olur */
     height: 100%;
-    /* Görselin yüksekliği #app ile uyumlu olur */
   }
 }
 
@@ -304,5 +312,11 @@ nav .container-fluid {
     background-color: none !important;
     border-radius: none !important;
     text-shadow: none !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner-section .card {
+    background:none !important;
   }
 }
