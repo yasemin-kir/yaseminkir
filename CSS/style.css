@@ -241,6 +241,24 @@ nav .container-fluid {
 
 }
 
+/* =====Banner Section====== */
+.banner-section {
+  background-image: url(../img/banner-section.avif);
+  filter: brightness(0.9) ;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 35rem;
+  width: auto;
+}
+
+.banner-section .card {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+  z-index: 999;
+}
 
 /* ========Media Queries======= */
 @media (max-width: 768px) {
