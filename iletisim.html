@@ -8,22 +8,21 @@
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
-    <title>Yasemin Kır.</title>
+    <title>İletişim | Yasemin Kır.</title>
 </head>
 
 <body>
     <!-- Header - Start -->
-
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg p-0 m-0">
-        <div class="container-fluid fixed-top p-0 m-0 border-bottom-rounded-5">
+        <div class="container-fluid fixed-top m-0 border-bottom-rounded-5">
             <a href="index.html" class="navbar-brand">Yasemin Kır.</a>
             <button class="navbar-toggler toggler-menu-icon" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMenu"
                 aria-controls="toggleMenu" aria-expanded="false" aria-label="Açılabilir menü">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon p-3"></span>
             </button>
 
             <div class="collapse navbar-collapse bg-white mt-3 mt-lg-0" id="toggleMenu">
@@ -56,24 +55,72 @@
             <div class="title">
                 <div class="title-inner">
                     <div class="cafe">
-                        <div class="cafe-inner">Merhaba!</div>
+                        <div class="cafe-inner">Benimle</div>
                     </div>
                     <div class="mozart">
-                        <div class="mozart-inner">Ben Yasemin Kır.</div>
+                        <div class="mozart-inner">İletişime Geç!</div>
                     </div>
-                    <div class="text-fade">
-                        <div class="faded-inner">Web Geliştiriciyim!</div>
-                      </div>
                 </div>
             </div>
             <!-- banner image -->
             <div class="image">
-                <img src="img/banner-homepage.avif" alt="Banner Image">
+                <img src="img/banner-contact-img.avif" alt="Banner Image">
             </div>
         </div>
     </header>
 
-    <main></main>
+    <main>
+        <div class="container my-5">
+            <div class="row gap-5">
+                <!-- Maps -->
+                <div class="offset-1 col-lg-5 rounded-4 h-100">
+                    <div class="card rounded-top-4 p-0 m-0">
+                        <div class="card-body p-0 rounded-top-4">
+                            <iframe class="m-0 p-0 w-100 rounded-top-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.2675437071825!2d-6.2489882!3d53.338466800000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e831bd14351%3A0xbac298ffa25c1876!2sFriday%20-%20Digital%20Agency!5e0!3m2!1str!2str!4v1731425338304!5m2!1str!2str" style="border:0;" allowfullscreen="" height="400px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <img src="img/map-logo.png" class="img-fluid w-25" alt="Friday Digital Agency">
+                                <div class="text-end">
+                                    <div class="d-inline-flex align-items-end">
+                                        <i class="bi bi-geo-fill fs-1 text-danger"></i>
+                                        <p class="h4">Adres:</p>
+                                    </div>
+                                    <p class="lead">61 Merrion Square South,</p>
+                                    <p class="lead">Dublin 2, D02 EW25, <b>Ireland</b></p>
+                                    <p><u>Çalışma Saatleri</u></p>
+                                    <p><b>Haftaiçi: </b> 09:00 - 17:30</p>
+                                    <p><b>Haftasonu: </b> Kapalı </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="col-lg-5 rounded-4 h-100 mt-5 mt-lg-0">
+                    <div class="card rounded-top-4 bg-prime">
+                        <div class="card-body">
+                            <form>
+                                <label for="full-name" class="label-control text-light">(*) Ad-Soyad:</label>
+                                <input id="full-name" class="form-control" type="text" placeholder="Ad-soyad" required>
+                                <label for="phone-num" class="label-control text-light mt-4">Telefon Numarası (Tercihe bağlı):</label>
+                                <input id="phone-num" class="form-control" type="tel" placeholder="(05XX) 123 45 67">
+                                <label for="mail" class="label-control text-light mt-4">(*) E-posta adresiniz:</label>
+                                <input id="mail" class="form-control" type="email" placeholder="example@example.com" required>
+                                <label for="company" class="label-control text-light mt-4">(*) Kurum / Şirket:</label>
+                                <input id="company" class="form-control" type="text" placeholder="Kurum / Şirket adı" required>
+                                <label for="message-title" class="label-control text-light mt-4">(*) Mesaj Başlığı:</label>
+                                <input id="company" class="form-control" type="text" placeholder="Mesaj başlığı" required>
+                                <label for="message" class="label-control text-light mt-4">(*) Mesajınız:</label>
+                                <textarea id="message" rows="3" class="form-control" placeholder="Mesajınız..."></textarea>
+                                <input id="checkbox" type="checkbox" required>
+                                <label for="checkbox" class="label-control text-light mt-4">* <a class="text-warning text-decoration-none" href="#" >Gizlilik</a> & <a class="text-warning text-decoration-none" href="#">Çerez Politikasını</a> kabul ediyorum.</label>
+                                <input id="submit" class="form-control mt-4" type="submit" placeholder="Mesaj başlığı" required>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!-- FOOTER START -->
     <footer>
@@ -142,11 +189,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="text-center text-secondary"><p><small>&copy2024. Tüm Hakları Saklıdır.</small></p></div>
+                <div class="text-center text-secondary">
+                    <p><small>&copy2024. Tüm Hakları Saklıdır.</small></p>
+                </div>
             </div>
         </div>
     </footer>
-    <!-- FOOTER START -->
+    <!-- FOOTER END -->
 
 
     <script src="JS/bootstrap.bundle.min.js"></script>

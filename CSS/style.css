@@ -272,6 +272,11 @@ nav .container-fluid {
   opacity: 0.5;
 }
 
+.bg-prime {
+  background-color: #3a3535 !important;
+  color: #ede8e2 !important;
+}
+
 /* ========Media Queries======= */
 @media (max-width: 768px) {
   .banner #app {
